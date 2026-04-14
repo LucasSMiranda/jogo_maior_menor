@@ -28,6 +28,9 @@ int main() {
     //Exibir o número do computador
 
     printf("O número do computador é : %d\n", numeroComputador);
+
+
+    
    
 
     return 0;
