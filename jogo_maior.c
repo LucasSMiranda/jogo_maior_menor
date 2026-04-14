@@ -29,6 +29,33 @@ int main() {
 
     printf("O número do computador é : %d\n", numeroComputador);
 
+    switch (tipoComparacao)
+    {
+    case 'M':
+    case 'm':
+    printf("Você escolheu a opção: MAIOR.\n");
+        resultado = numeroJogador > numeroComputador ? 1 : 0;
+        break;
+
+    case 'N':
+    case 'n':
+    printf("Você escolheu a opção MENOR.\n");
+        resultado = numeroJogador < numeroComputador ? 1 : 0;
+        break;
+
+    case 'I':
+    case 'i':
+    printf("Você escolheu a opção IGUAL.\n");
+        resultado = numeroJogador == numeroComputador ? 1 : 0;
+        break;
+
+
+    
+    
+    default:
+        break;
+    }
+
 
     
    
