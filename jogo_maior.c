@@ -18,6 +18,7 @@ int main() {
     printf("M. Maior\n");
     printf("N. Menor\n");
     printf("I.Igual\n");
+    printf("Qual o tipo de comparação?");
     scanf (" %s" , &tipoComparacao);
 
     
