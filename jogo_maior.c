@@ -18,7 +18,12 @@ int main() {
     printf("M. Maior\n");
     printf("N. Menor\n");
     printf("I.Igual\n);
-    
+
+    printf("Escolha a comparação:\n");
+    scanf("c", &tipoComparacao);
+
+    printf("Escolha o número (entre 1 e 100):\n");
+    scanf("d", &numeroJogador);
 
 
     return 0;
