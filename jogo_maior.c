@@ -18,16 +18,16 @@ int main() {
     printf("M. Maior\n");
     printf("N. Menor\n");
     printf("I.Igual\n");
+    scanf (" %s" , &tipoComparacao);
 
-    printf("Escolha a comparação:");
-    scanf(" %c", &tipoComparacao);
+    
 
     printf("Escolha o número (entre 1 e 100):");
     scanf(" %d", &numeroJogador);
 
-    //Exibir o número do computador
+    //Exibir o número do computador e jogador
 
-    printf("O número do computador é : %d\n", numeroComputador);
+        printf("Você escolheu o número %d e o número do computador é %d.\n", numeroJogador, numeroComputador);
 
     switch (tipoComparacao)
     {
@@ -48,16 +48,28 @@ int main() {
     printf("Você escolheu a opção IGUAL.\n");
         resultado = numeroJogador == numeroComputador ? 1 : 0;
         break;
-
-
     
     
     default:
+    printf("Opção inválida");
         break;
     }
-
+        //Resultado do jogo
 
     
+
+    if (resultado)
+    {
+        printf("Parabéns, você venceu!\n");
+    }
+    else
+    {
+        printf("Que pena, você perdeu.\n");
+    }
+    
+    
+
+      
    
 
     return 0;
